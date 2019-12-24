@@ -8,6 +8,7 @@
 
 namespace app\controllers;
 use app\models\SignupForm;
+use yii\helpers\Url;
 use Yii;
 use yii\web\Controller;
 use app\models\LoginForm;
@@ -24,7 +25,8 @@ class AuthController extends Controller
     public function actionLogin()
     {
         if (!Yii::$app->user->isGuest) {
-         return $this->goHome();
+         return $this->redirect(Url::to('site/company'));
+
         }
 
         $model = new LoginForm();
