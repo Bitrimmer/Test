@@ -12,7 +12,7 @@ class m191224_100859_User extends Migration
      */
     public function safeUp()
     {
-        $this->createTable('User', [
+        $this->createTable('UserIdentity', [
             'id' => $this->primaryKey(), //Не обязательный параметр но очень желательный
             'login' => $this->string('50')->notNull(),
             'password' => $this->string('50')->notNull(),
