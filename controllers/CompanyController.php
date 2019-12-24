@@ -35,7 +35,7 @@ class CompanyController extends Controller
                         'allow' => true,
                         'roles' => ['@'],
                         /*'matchCallback' => function ($rule, $action) {
-                            return Yii::$app->user->identity->isAdmin() == 1;
+                            return Yii::$app->user->identity->isAdmin() == 1; Этот вариант подходит для средней сложности ролей
                         }*/
                     ],
                 ],
